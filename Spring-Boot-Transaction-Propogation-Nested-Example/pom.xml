@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.starttohkar</groupId>
-	<artifactId>Spring-Boot-Transaction-Example</artifactId>
+	<artifactId>Spring-Boot-Transaction-Propogation-Nested-Example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Spring-Boot-Transaction-Example</name>
-	<description>Spring-Boot-Transaction-Example</description>
+	<name>Spring-Boot-Transaction-Propogation-Nested-Example</name>
+	<description>Spring-Boot-Transaction-Propogation-Nested-Example</description>
 	<url/>
 	<licenses>
 		<license/>
