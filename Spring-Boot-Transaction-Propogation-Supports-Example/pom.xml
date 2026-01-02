@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.starttohkar</groupId>
-	<artifactId>Spring-Boot-Transaction-Propogation-Not-Supported-Example</artifactId>
+	<artifactId>Spring-Boot-Transaction-Propogation-Supports-Example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Spring-Boot-Transaction-Propogation-Not-Supported-Example</name>
-	<description>Spring-Boot-Transaction-Propogation-Not-Supported-Example</description>
+	<name>Spring-Boot-Transaction-Propogation-Supports-Example</name>
+	<description>Spring-Boot-Transaction-Propogation-Supports-Example</description>
 	<url/>
 	<licenses>
 		<license/>
