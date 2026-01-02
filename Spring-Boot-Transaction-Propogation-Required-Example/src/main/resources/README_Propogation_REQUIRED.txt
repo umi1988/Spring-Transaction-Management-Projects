@@ -28,6 +28,24 @@ In this below methid we are performing txn. This placeAnOrder method is started 
 
     }
 
+
+    @Transactional(propagation = Propagation.REQUIRED)// This Txn t2
+   public Order saveOrder(Order order){
+       return orderRepository.save(order);
+   }
+
+   @Transactional(propagation = Propagation.REQUIRED)//THis is txn T3
+   public Product updateProductDetails(Product product){
+       //Till now, it's working as expected as able to store the order and save the product with stock updated.
+       // Now we need to replicate the use case to understand the need of txn mgmt
+       // forcefully throwing exception to simulate use of tx
+       if(product.getPrice()> 5000){
+           throw new RuntimeException("DB Crashed ....");
+       }
+       return inventoryRepository.save(product);
+   }
+   
+
     Now with  Propagation.REQUIRED , it will not create a inner txn as we already exist outer txn. we can validate in the logs and confirm this use case.
 
 
